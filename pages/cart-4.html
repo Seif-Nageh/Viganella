@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/uikit.min.css">
+    <link rel="shortcut icon" href="../assets/img/logo.png">
+    <title>Viganella</title>
+</head>
+
+<body class="fs-5 text-black">
+    
+    <!-----  Start Nav Bar   ----->
+
+    <nav id="navigator" class="navbar pb-1 text-white bg-main">
+      <div class="container">
+          <a class="navbar-brand text-decoration-none m-0 p-0" href="#">
+              <img class="uk-preserve" src="../assets/img/logo-shadow.png" alt="viganella" width="90" height="60" uk-svg>
+          </a>
+          <span class="nav-item">
+            <a class="nav-link text-decoration-none active" aria-current="page" href="../index.html">Home</a>
+          </span>
+          <span class="nav-item">
+<!--             <a class="nav-link text-decoration-none" href="#">Contact Us</a>   -->
+              <div class="dropdown">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="category.html">Category</a></li>
+                      <li><a class="dropdown-item" href="about.html">About</a></li>
+                      <li><a class="dropdown-item" href="product.html">Product</a></li>
+                      <li><a class="dropdown-item" href="components.html">Components</a></li>
+                  </ul>
+              </div>
+          </span>
+          <form class="d-flex">
+              <div class="uk-inline">
+                  <a class="uk-form-icon text-decoration-none" href="">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <input class="form-control uk-form-blank  border-0 border-3 rounded-0 border-bottom ps-5 me-2" type="search" placeholder="Search" aria-label="Search">
+              </div>
+          </form>
+          <button type="button" class="btn position-relative">
+          <i class="fa-solid fa-cart-arrow-down fs-4"></i><span class="position-absolute top-0 start-50 translate-middle badge text-danger">+99 <span class="visually-hidden">unread messages</span></span><span class="position-absolute top-100 start-50 translate-middle badge">Cart</span>
+          </button>
+          <button type="button" class="btn position-relative">
+          <i class="fa-solid fa-circle-user fs-4"></i>
+          <span class="position-absolute top-100 start-50 translate-middle badge">Account</span>
+          </button>
+          <button type="button" class="btn position-relative">
+          <i class="fa-solid fa-align-justify fs-2"></i>          
+          </button>
+      </div>
+  </nav>
+    <!-----  End Nav Bar   ----->
+
+    <!-----  Start Cart Section   ----->
+
+
+  <section id="address-page" class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <i class="fa-solid fa-arrow-left fs-2 pe-5 text-second"></i> 
+            <p class="uk-text-bold fs-4 ps-5">
+                1 - Choose a Shipping Address :
+            </p>
+            <p class="uk-text-bold fs-4 p-5 pb-1">
+                2- Payment Method
+            </p>
+            <!-- Start Shipping Component-->
+  
+            <div class="bg-gray rounded-3">
+              <div class="container">
+                <div class="row px-5">
+                  <div class="col-12 pb-5 pt-2">
+                    Your Addresses
+                    <div class="w-100 px-5 py-2"><div class="px-5 border-bottom border-main border-3"></div></div>
+                    <p>
+                      <ul>
+                        <li class="bg-dark px-3 py-2 rounded-3">
+                          <div class="container">
+                              <div class="row text-white">
+                                  <div class="col-4">
+                                      <p>
+                                          <span>Master Card</span>
+                                          <span>Ending in ####</span>
+                                      </p>
+                                      <p>
+                                        Card Number (Last 4)
+                                      </p>
+                                      <p>
+                                          **** **** **** 1234
+                                      </p>
+                                  </div>
+                                  <div class="col-4">
+                                      <p class="text-center">Mohamed  Adel</p>
+                                  </div>
+                                  <div class="col-4">
+                                      <p class="uk-text-right">Expires On</p>
+                                      <p class="uk-text-right">22/22/2222</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </p>
+  
+                    <!-- Start Add Card Model-->
+
+                    <a href="#card-model" data-bs-toggle="modal" class="pb-4 d-block text-decoration-none"> + Add new Card</a>
+                    <div class="modal fade" id="card-model" aria-hidden="true" aria-labelledby="signinModelLabel" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                        <button type="button" class="btn-close ms-auto me-3 mt-3 opacity-25" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="uk-modal-header bg-gray rounded-top">
+                            <h2 class="uk-modal-title">Enter a new Credit or Debit Card</h2>
+                        </div>
+                        <div class="modal-content rounded-0 rounded-bottom border-0 border-top border-main border-4">
+                            <div class="modal-body bg-gray text-center">
+                            <div class="contanier">
+                                <div class="row">
+                                    <div class="col-6">
+                                        
+                                    <form>
+                                        <div class="mt-4">
+                                            <input class="uk-input uk-width-2-3 border-dark rounded-3 ps-3 d-inline-block" type="text" placeholder="Card Number">
+                                        </div>
+                                        <div class="mt-4">
+                                            <input class="uk-input uk-width-2-3 border-dark rounded-3 ps-3 d-inline-block" type="text" placeholder="Name on Card">
+                                        </div>
+                                        <div class="mt-4">
+                                            <label class="d-inline fs-6" for="#">Expiration Date:</label>
+                                            <input class="uk-input uk-width-1-6 border-dark rounded-3 ps-3 d-inline" type="text" placeholder="01">
+                                            <input class="uk-input uk-width-1-5 border-dark rounded-3 ps-3 d-inline" type="text" placeholder="2022">
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mt-4">Viganella accepts all payment cards</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 offset-md-6">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <button class="btn bg-third text-white px-4">Cancel</button>
+                                            <button class="btn-logo ms-4 px-5">
+                                                Add Card
+                                              </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                  <!-- End Add Card Model-->
+  
+                    <button class="btn btn-dark px-4 ms-4">Use This Card</button>
+                    <p>
+                        <ul>
+                          <li class="bg-dark px-3 py-2 rounded-3">
+                            <p class="text-white">Cash On Delivery (COD)</p>
+                          </li>
+                        </ul>
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- End Shipping Component-->
+            <p class="uk-text-bold fs-4 ps-5">
+                3- Items and Shipping
+            </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-----  End Cart Section   ----->
+
+
+
+
+      
+    <!----- Start footer ----->
+
+    <footer class="text-black bg-gray fs-3">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <ul class="list-unstyled">
+                        <li>About Us</li>
+                        <li>Return Policy</li>
+                        <li>Contact Us</li>
+                        <li>Privacy & Policy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>
+                              E-mail
+                            </span>
+                            <p class="fs-6">
+                                viganella@email.com
+                            </p>
+                        </li>
+                        <li>
+                            <span>
+                              phone Number
+                            </span>
+                            <p class="fs-6">
+                                (+20)1111111100
+                            </p>
+                        </li>
+                        <li>
+                            <span>
+                              Location
+                            </span>
+                            <p class="fs-6">
+                                El Sherouk, Gamaa Moul, Floor Number 2, Cairo Egypt.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>
+                Social Media
+              </span>
+                            <p class="fs-5">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </p>
+                        </li>
+                        <li>
+                            <span>
+                Payments Methods:
+              </span>
+                            <p class="fs-5">
+                                <i class="fa-brands fa-cc-visa">
+                </i>
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!----- End footer ----->
+
+
+
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/uikit.min.js"></script>
+    <script src="../assets/js/uikit-icons.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
