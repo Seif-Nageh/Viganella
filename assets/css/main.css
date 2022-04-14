@@ -10,6 +10,10 @@
   background-color: #EBEBEB !important;
 }
 
+.bg-half-black {
+  background-color: #141414a9;
+}
+
 .border-main {
   border-color: #3F055C !important;
 }
@@ -43,12 +47,54 @@ body {
   font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
 }
 
+@media (max-width: 767px) {
+  .fs-1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .fs-2 {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .fs-3 {
+    font-size: 1.15rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .fs-4 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .fs-5 {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .fs-6 {
+    font-size: 0.6rem !important;
+  }
+}
+
 #navigator a {
   color: #ffffff !important;
 }
 
 #navigator a:hover {
   color: #FD4142 !important;
+}
+
+@media (max-width: 767px) {
+  #navigator a {
+    font-size: 1rem !important;
+  }
 }
 
 #navigator .active {
@@ -63,23 +109,37 @@ body {
   color: #ffffff;
 }
 
-#navigator .dropdown a {
-  color: #31e0ff !important;
+@media (max-width: 992px) {
+  #main-slider .uk-overlay .overlay-text {
+    width: 100% !important;
+  }
+  #main-slider .uk-overlay .overlay-text .uk-text-left {
+    text-align: center !important;
+  }
 }
 
-#main-slider .lay-text {
-  top: 27%;
-  left: 25%;
-  opacity: 0.5;
+@media (max-width: 767px) {
+  #main-slider .uk-overlay .overlay-text {
+    width: 100% !important;
+  }
+  #main-slider .uk-overlay .overlay-text .letter-space {
+    letter-spacing: 10px !important;
+  }
 }
 
-#main-slider .lay-text div {
-  opacity: 1 !important;
+#main-slider .btn-logo {
+  padding-left: 25px !important;
+}
+
+#main-slider .btn-logo:hover {
+  padding-right: 30px !important;
+  padding-left: 0px !important;
 }
 
 #vision {
   background-image: url("../img/vision.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #collection-sec {
@@ -154,7 +214,8 @@ footer p {
   background-color: #3f055c9f !important;
 }
 
-.uk-offcanvas-bar button, .uk-offcanvas-bar p {
+.uk-offcanvas-bar button,
+.uk-offcanvas-bar p {
   color: #000000 !important;
   margin: 9px 0 !important;
 }

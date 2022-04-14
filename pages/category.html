@@ -14,47 +14,77 @@
 </head>
 
 <body class="fs-5 text-white">
-    
+
     <!-----  Start Nav Bar   ----->
 
-    <nav id="navigator" class="navbar pb-1 text-white bg-main">
-        <div class="container">
-            <a class="navbar-brand text-decoration-none m-0 p-0" href="#">
-                <img class="uk-preserve" src="../assets/img/logo-shadow.png" alt="viganella" width="90" height="60" uk-svg>
-            </a>
-            <span class="nav-item">
-              <a class="nav-link text-decoration-none active" aria-current="page" href="#">Home</a>
-            </span>
-            <span class="nav-item">
-  <!--             <a class="nav-link text-decoration-none" href="#">Contact Us</a>   -->
-                <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pages
+    <nav id="navigator" class="navbar pb-2 text-white bg-main">
+        <div class="container m-auto">
+            <div class="row">
+                <div class="col-md-1 col-3 order-3 order-md-0">
+                    <a class="navbar-brand text-decoration-none" href="#">
+                        <img class="uk-preserve w-100 h-100" src="assets/img/logo-shadow.png" alt="viganella" uk-svg>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="../pages/category.html">Category</a></li>
-                        <li><a class="dropdown-item" href="../pages/about.html">About</a></li>
-                    </ul>
                 </div>
-            </span>
-            <form class="d-flex">
-                <div class="uk-inline">
-                    <a class="uk-form-icon text-decoration-none" href="">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <input class="form-control uk-form-blank  border-0 border-3 rounded-0 border-bottom ps-5 me-2" type="search" placeholder="Search" aria-label="Search">
+                <div class="col-md-4 col-7 text-center order-1 order-md-0">
+                    <div class="row mt-2">
+                        <div class="col-3 col-md-4 col-lg-6">
+                            <span class="nav-item">
+                                <a class="nav-link text-decoration-none p-1 active" aria-current="page" href="#">Home</a>
+                        </span>
+                        </div>
+                        <div class="col">
+                            <span class="nav-item">
+                                <a class="nav-link text-decoration-none p-1" href="#">Contact Us</a>  
+                                <!-- <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="pages/category.html">Category</a></li>
+                                        <li><a class="dropdown-item" href="pages/about.html">About</a></li>
+                                        <li><a class="dropdown-item" href="pages/product.html">Product</a></li>
+                                        <li><a class="dropdown-item" href="pages/components.html">Components</a></li>
+                                        <li><a class="dropdown-item" href="pages/cart-1.html">Cart</a></li>
+                                        <li><a class="dropdown-item" href="pages/cart-2.html">Cart-2</a></li>
+                                        <li><a class="dropdown-item" href="pages/cart-3.html">Cart-3</a></li>
+                                        <li><a class="dropdown-item" href="pages/cart-4.html">Cart-4</a></li>
+                                        <li><a class="dropdown-item" href="pages/profile-1.html">Profile-1</a></li>
+                                        <li><a class="dropdown-item" href="pages/profile-2.html">Profile-2</a></li>
+                                        <li><a class="dropdown-item" href="pages/track-1.html">Track-1</a></li>
+                                        <li><a class="dropdown-item" href="pages/track-2.html">Track-2</a></li>
+                                    </ul>
+                                </div> -->
+                        </span>
+                        </div>
+                    </div>
                 </div>
-            </form>
-            <button type="button" class="btn position-relative">
-            <i class="fa-solid fa-cart-arrow-down fs-4"></i><span class="position-absolute top-0 start-50 translate-middle badge text-danger">+99 <span class="visually-hidden">unread messages</span></span><span class="position-absolute top-100 start-50 translate-middle badge">Cart</span>
-            </button>
-            <button type="button" class="btn position-relative">
-            <i class="fa-solid fa-circle-user fs-4"></i>
-            <span class="position-absolute top-100 start-50 translate-middle badge">Account</span>
-            </button>
-            <button type="button" class="btn position-relative">
-            <i class="fa-solid fa-align-justify fs-2"></i>          
-            </button>
+                <div class="col-md-4 col-6 order-4 order-md-0 mt-2 mt-md-0">
+                    <form class="d-flex justify-content-center mt-2">
+                        <div class="uk-inline">
+                            <a class="uk-form-icon text-decoration-none" href="#">
+                                <i class="fa-solid fa-magnifying-glass mb-2"></i>
+                            </a>
+                            <input class="form-control uk-form-blank py-0 border-0 border-3 rounded-0 border-bottom ps-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-1 col-3 order-5 order-md-0 mt-3 mt-md-0">
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-cart-arrow-down fs-4"></i><span class="position-absolute top-0 start-50 translate-middle badge text-danger">+99 <span class="visually-hidden">unread messages</span></span><span class="position-absolute top-100 start-50 translate-middle badge">Cart</span>
+                    </button>
+                </div>
+                <div class="col-md-1 col-3 order-2 order-md-0">
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-circle-user fs-4"></i>
+                        <span class="position-absolute top-100 start-50 translate-middle badge">Account</span>
+                    </button>
+                </div>
+                <div class="col-md-1 col-2 text-center">
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-align-justify fs-2"></i>          
+                    </button>
+                </div>
+            </div>
         </div>
     </nav>
     <!-----  End Nav Bar   ----->
@@ -66,39 +96,39 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                                    
-                <!-----  Start Filter part  ----->
 
-                <div id="filter" class="shadow p-3 text-black fs-4">
-                    <p>Design Yourself</p>
-                    <div class="w-100 border-bottom border-main border-3"></div>
-                    <a  href="#">Pillows</a>
-                    <a class="f-active" href="#">Curtains</a>
-                    <a class="fs-6" href="#">Kids</a>
-                    <a class="fs-6" href="#">Pictures Curtains</a>
-                    <a class="fs-6" href="#">Modern</a>
-                    <a  href="#">Fabric</a>
-                    <a  href="#">Portrait</a>
-                    <a  href="#">Modern</a>
-                    <div class="w-100 border-bottom border-main border-3"></div>
-                    <p>Filters :</p>
-                    <a class="d-inline" href="#">Special</a>
-                    <a class="d-inline" href="#">Offers</a>
-                    <a class="d-inline" href="#">Trending</a>
-                    <div class="w-100 border-bottom border-main border-3"></div>
-                    <p>Show by:</p>
-                    <div class="">
-                        <label ><input class="uk-radio" type="radio" name="radio2" checked> Price: from Low to High</label>
-                        <label ><input class="uk-radio" type="radio" name="radio2"> Price: from High to Low</label>
-                        <label ><input class="uk-radio" type="radio" name="radio2"> Most Popular</label>
-                        <label ><input class="uk-radio" type="radio" name="radio2"> Highest Rating</label>
-                    </div>  
-                    <button class="btn rounded-3 bg-main text-white uk-flex-center uk-align-center">Confirm</button>
-            
-                </div>
-            
-                <!-----  End Filter part  ----->
-  
+                    <!-----  Start Filter part  ----->
+
+                    <div id="filter" class="shadow p-3 text-black fs-4">
+                        <p>Design Yourself</p>
+                        <div class="w-100 border-bottom border-main border-3"></div>
+                        <a href="#">Pillows</a>
+                        <a class="f-active" href="#">Curtains</a>
+                        <a class="fs-6" href="#">Kids</a>
+                        <a class="fs-6" href="#">Pictures Curtains</a>
+                        <a class="fs-6" href="#">Modern</a>
+                        <a href="#">Fabric</a>
+                        <a href="#">Portrait</a>
+                        <a href="#">Modern</a>
+                        <div class="w-100 border-bottom border-main border-3"></div>
+                        <p>Filters :</p>
+                        <a class="d-inline" href="#">Special</a>
+                        <a class="d-inline" href="#">Offers</a>
+                        <a class="d-inline" href="#">Trending</a>
+                        <div class="w-100 border-bottom border-main border-3"></div>
+                        <p>Show by:</p>
+                        <div class="">
+                            <label><input class="uk-radio" type="radio" name="radio2" checked> Price: from Low to High</label>
+                            <label><input class="uk-radio" type="radio" name="radio2"> Price: from High to Low</label>
+                            <label><input class="uk-radio" type="radio" name="radio2"> Most Popular</label>
+                            <label><input class="uk-radio" type="radio" name="radio2"> Highest Rating</label>
+                        </div>
+                        <button class="btn rounded-3 bg-main text-white uk-flex-center uk-align-center">Confirm</button>
+
+                    </div>
+
+                    <!-----  End Filter part  ----->
+
                 </div>
 
                 <!-----  Start product part  ----->
@@ -114,7 +144,7 @@
                                     <li uk-filter-control=".kids"><a class="justify-content-center fs-2" href="#">Kids</a></li>
                                     <li uk-filter-control=".classic"><a class="justify-content-center fs-2" href="#">Classic</a></li>
                                 </ul>
-                                
+
                                 <div class="w-100 border-bottom border-main border-3 mb-5"></div>
 
                                 <ul id="product-main-filter" class="uk-child-width-1-2 uk-child-width-1-3@m" uk-grid>
@@ -217,16 +247,16 @@
 
                 <!-----  End product part  ----->
 
-                <div class="col-12">
-                    
-                      <div class="title">
+                <!-- <div class="col-12">
+
+                    <div class="title">
                         <div class=" uk-flex uk-flex-middle uk-flex-center">
                             <div class="w-100 border-bottom border-main border-3"></div>
                             <nav class="fs-3" aria-label="Page navigation" style="padding: 0 15rem;">
                                 <ul class="pagination justify-content-center">
                                     <li class="page-item disabled">
                                         <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
+                                            <span aria-hidden="true">&laquo;</span>
                                         </a>
                                     </li>
                                     <li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -234,15 +264,15 @@
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
+                                            <span aria-hidden="true">&raquo;</span>
                                         </a>
                                     </li>
                                 </ul>
-                            </nav>                            
+                            </nav>
                             <div class="w-100 border-bottom border-main border-3"></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -258,7 +288,7 @@
 
 
 
-    
+
     <!----- Start footer ----->
 
     <footer class="text-black bg-gray fs-3">
